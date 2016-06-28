@@ -47,7 +47,6 @@ namespace CoreUI
             uiControlShow(uiControl(mainwin));
             uiMain();
             return 0;
-
         }
 
         static uiControlPtr makeBasicControlsPage()
@@ -113,7 +112,7 @@ namespace CoreUI
 
         static void onSpinboxChanged(IntPtr s, IntPtr data)
         {
-            uiSliderSetValue(s, uiSpinboxValue(s));
+            uiSliderSetValue(slider, uiSpinboxValue(s));
             uiProgressBarSetValue(pbar, uiSpinboxValue(s));
         }
 
