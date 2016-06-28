@@ -8,7 +8,9 @@ https://github.com/andlabs/libui
 
 ## Building
 
+```
 dotnet restore
 msbuild build.proj
+```
 
 * Outside windows, build libui yourself and put it somewhere the program can find.
