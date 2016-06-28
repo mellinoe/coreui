@@ -3,6 +3,7 @@
     "System.Console": "4.0.0",
     "Microsoft.NETCore.DotNetHostPolicy": "1.0.1",
     "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+    "core.ui": { "target": "project" }
   },
   "runtimes": {
     "win10-x64": { },

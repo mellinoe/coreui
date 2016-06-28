@@ -33,6 +33,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>libui.dll</Link>
     </Content>
+    <Content Include="$(ProjectDir)deps\libui\ubuntu.14.04-x64\libui.so" Condition="'$(OSTarget)' == 'Ubuntu'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>libui.so</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.targets))\dir.targets" />
 </Project>
